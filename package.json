@@ -1,0 +1,51 @@
+{
+  "name": "cordova-sqlite-storage-16kb",
+  "version": "6.1.0-16kb.1",
+  "description": "Native interface to SQLite for Cordova - Android 15 16KB page size compatible",
+  "cordova": {
+    "id": "cordova-sqlite-storage",
+    "platforms": [
+      "android",
+      "browser",
+      "ios",
+      "osx",
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HajaTahiriniaina/cordova-sqlite-storage-16kb.git"
+  },
+  "keywords": [
+    "sqlite",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-browser",
+    "cordova-ios",
+    "cordova-osx",
+    "cordova-windows",
+    "android-15",
+    "16kb",
+    "page-size"
+  ],
+  "author": "various (16KB fork by Haja Tahiriniaina)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HajaTahiriniaina/cordova-sqlite-storage-16kb/issues"
+  },
+  "homepage": "https://github.com/HajaTahiriniaina/cordova-sqlite-storage-16kb",
+  "dependencies": {
+    "cordova-sqlite-storage-dependencies": "file:./node_modules/cordova-sqlite-storage-dependencies"
+  },
+  "scripts": {
+    "clean-spec": "rimraf spec/[mnp]* && git checkout -- spec/config.xml spec/package.json && git status --ignored",
+    "prepare-js": "coffee -p SQLitePlugin.coffee.md > www/SQLitePlugin.js",
+    "prepare-spec": "node scripts/prepareSpec.js"
+  },
+  "devDependencies": {
+    "coffeescript": "1",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^8.1.0",
+    "rimraf": "^3.0.2"
+  }
+}
