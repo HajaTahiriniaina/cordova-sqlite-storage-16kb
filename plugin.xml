@@ -44,8 +44,8 @@
         <source-file src="src/android/io/sqlc/SQLiteAndroidDatabase.java" target-dir="src/io/sqlc"/>
         <source-file src="src/android/io/sqlc/SQLiteConnectorDatabase.java" target-dir="src/io/sqlc"/>
 
-        <lib-file src="node_modules/cordova-sqlite-storage-dependencies/libs/sqlite-native-ndk-connector.jar" />
-        <lib-file src="node_modules/cordova-sqlite-storage-dependencies/libs/sqlite-ndk-native-driver.jar" />
+        <lib-file src="libs/sqlite-native-ndk-connector.jar" />
+        <lib-file src="libs/sqlite-ndk-native-driver.jar" />
     </platform>
 
     <!-- iOS -->
