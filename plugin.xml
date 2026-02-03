@@ -22,7 +22,7 @@
 
     <platform name="browser">
         <!-- sql-asm js item must come before SQLiteProxy for SQLiteProxy.js to work on browser -->
-        <js-module src="node_modules/cordova-sqlite-storage-dependencies/sql-asm-memory-growth.js" name="sql">
+        <js-module src="deps/sql-asm-memory-growth.js" name="sql">
           <runs />
         </js-module>
 
@@ -63,8 +63,8 @@
         <source-file src="src/ios/CustomPSPDFThreadSafeMutableDictionary.m"
                 compiler-flags="-w" />
 
-        <header-file src="node_modules/cordova-sqlite-storage-dependencies/sqlite3.h" />
-        <source-file src="node_modules/cordova-sqlite-storage-dependencies/sqlite3.c"
+        <header-file src="deps/sqlite3.h" />
+        <source-file src="deps/sqlite3.c"
                      compiler-flags="-w -DSQLITE_THREADSAFE=1 -DSQLITE_DEFAULT_SYNCHRONOUS=3 -DSQLITE_DEFAULT_MEMSTATUS=0 -DSQLITE_OMIT_DECLTYPE -DSQLITE_OMIT_DEPRECATED -DSQLITE_OMIT_PROGRESS_CALLBACK -DSQLITE_OMIT_SHARED_CACHE -DSQLITE_TEMP_STORE=2 -DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_RTREE -DSQLITE_DEFAULT_PAGE_SIZE=4096" />
     </platform>
 
@@ -83,8 +83,8 @@
         <source-file src="src/ios/CustomPSPDFThreadSafeMutableDictionary.m"
                 compiler-flags="-w" />
 
-        <header-file src="node_modules/cordova-sqlite-storage-dependencies/sqlite3.h" />
-        <source-file src="node_modules/cordova-sqlite-storage-dependencies/sqlite3.c"
+        <header-file src="deps/sqlite3.h" />
+        <source-file src="deps/sqlite3.c"
                      compiler-flags="-w -DSQLITE_THREADSAFE=1 -DSQLITE_DEFAULT_SYNCHRONOUS=3 -DSQLITE_DEFAULT_MEMSTATUS=0 -DSQLITE_OMIT_DECLTYPE -DSQLITE_OMIT_DEPRECATED -DSQLITE_OMIT_PROGRESS_CALLBACK -DSQLITE_OMIT_SHARED_CACHE -DSQLITE_TEMP_STORE=2 -DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_RTREE -DSQLITE_DEFAULT_PAGE_SIZE=4096" />
     </platform>
 
